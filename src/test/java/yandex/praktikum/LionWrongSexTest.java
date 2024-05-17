@@ -27,9 +27,9 @@ public class LionWrongSexTest {
 
     @Test
     public void doesHaveManeWorksCorrectly() {
-        IndexOutOfBoundsException indexOutOfBoundsException = Assert.assertThrows(IndexOutOfBoundsException.class,
+        Exception exception = Assert.assertThrows(Exception.class,
                 () -> new Lion(sex, null));
         Assert.assertEquals(EXPECTED_ERROR,
-                indexOutOfBoundsException.getMessage());
+                exception.getMessage());
     }
 }
