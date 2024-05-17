@@ -7,14 +7,14 @@ public class Lion {
     boolean hasMane;
     Feline feline;
 
-<span class="fc" id="L10">    public Lion(String sex, Feline feline) throws IndexOutOfBoundsException {</span>
+<span class="fc" id="L10">    public Lion(String sex, Feline feline) throws Exception {</span>
 <span class="fc" id="L11">        this.feline = feline;</span>
 <span class="fc bfc" id="L12" title="All 2 branches covered.">        if (&quot;Самец&quot;.equals(sex)) {</span>
 <span class="fc" id="L13">            hasMane = true;</span>
 <span class="fc bfc" id="L14" title="All 2 branches covered.">        } else if (&quot;Самка&quot;.equals(sex)) {</span>
 <span class="fc" id="L15">            hasMane = false;</span>
         } else {
-<span class="fc" id="L17">            throw new IndexOutOfBoundsException(&quot;Используйте допустимые значения пола животного - самей или самка&quot;);</span>
+<span class="fc" id="L17">            throw new Exception(&quot;Используйте допустимые значения пола животного - самей или самка&quot;);</span>
         }
 <span class="fc" id="L19">    }</span>
 
